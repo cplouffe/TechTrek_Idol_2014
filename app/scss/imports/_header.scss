@@ -1,0 +1,104 @@
+/* Header */
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #333;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+
+.demo-2 .large-header {
+  background-image: url('../images/skyline.jpg');
+  background-position: center bottom;
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 37%;
+  left: 27%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+.demo-2 .main-title::before {
+  content: '';
+  width: 18em;
+  height: 11.9em;
+  // min-width: 5em;
+  // min-height: 3.3em;
+  background: url(../images/reactor-logo-grey.png) no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 37%;
+  left: 27%;
+  /*border-radius: 50%;*/
+  z-index: -1;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+
+.main-desc {
+  font-family: $fontFamily;
+  font-weight: normal;
+  font-size: 1.7em;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 68%;
+  left: 27%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+.buttons-wrapper {
+  position: absolute;
+  margin: 0;
+  top: 76%;
+  left: 27%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+    padding-top: 53px;
+    .button-stripe {
+        margin-left: 14px;
+    }
+}
+
+.header-phone {
+  z-index: 1000;
+  background: url(../images/iphone6-template.png) no-repeat center center;
+  height: 872px;
+  width: 456px;
+  background-size: 90%;
+  position: absolute;
+  top: 0;
+  right: 15%;
+}
+
+.header-phone .img-content {
+  width: (321px) * 0.9;
+  height: (570px) * 0.9;
+  padding-top: 179px;
+  padding-left: 83px;
+  overflow: hidden;
+  position: absolute;
+}
+
+@media (max-width: 1100px) {
+  .demo-2 .main-title, .main-desc, .buttons-wrapper {
+    left: 50%;
+  }
+
+  .header-phone {
+    display: none;
+  }
+}
